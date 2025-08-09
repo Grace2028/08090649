@@ -1,0 +1,43 @@
+你想要一個簡單網頁，裡面有按鈕點擊後會改變背景顏色，對吧？我幫你寫一個簡單範例：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<title>顏色按鈕示範</title>
+<style>
+  body {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>點擊按鈕改變背景顏色</h1>
+
+<button onclick="changeColor('lightblue')">淺藍色</button>
+<button onclick="changeColor('lightgreen')">淺綠色</button>
+<button onclick="changeColor('lightpink')">淺粉色</button>
+<button onclick="changeColor('white')">白色</button>
+
+<script>
+  function changeColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+</body>
+</html>
+```
+
+你可以把這段程式碼存成 `.html` 檔案，用瀏覽器打開就可以看到按鈕，點擊會改變背景色。
+需要更複雜功能也可以跟我說！
